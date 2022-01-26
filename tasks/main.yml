@@ -1,0 +1,5 @@
+- name: Set /etc/motd from variable
+  copy:
+    dest: "/etc/motd"
+    mode: 0644
+    content: "{{ motd_content }}"
